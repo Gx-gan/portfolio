@@ -151,6 +151,7 @@
       transform: scale(1.2);
     }
 
+
     @media (max-width: 900px) {
       .hero {
         flex-direction: column-reverse;
@@ -178,6 +179,7 @@
       .hero-img img {
         width: 260px;
       }
+
     }
   </style>
 </head>
@@ -200,9 +202,9 @@
       <h2>And I'm a <span id="typing"></span></h2>
       <p>Hi! I'm Gagan, a passionate front-end developer specializing in translating design concepts into seamless and interactive web experiences using HTML, CSS, and JavaScript.</p>
      
-     <a href="gagan's_quotes_App.apk" download>
+     <!-- <a href="gagan's_quotes_App.apk" download>
   <button>Download My App</button>
-</a>
+</a> -->
 
      
      
@@ -219,7 +221,7 @@
     <a href="#"><i class="fab fa-x-twitter"></i></a>
     <a href="#"><i class="fab fa-whatsapp"></i></a>
   </div>
-      <a href="#" class="btn">Download CV</a>
+      <a href="gagan's_quotes_App.apk" onclick="notify()" class="btn" download>Download App</a>
     </div>
     <div class="hero-img">
       <img src="car.jpg" alt="Gagan">
@@ -229,7 +231,17 @@
   
 
   <script>
-    const texts = ["Front-End Developer", "Web Designer", "Creative Coder"];
+
+function notify() {
+  x=confirm('Are you sure you want to download my app? This cannot be undone.');
+  if (x=false){
+
+  }
+}
+
+
+
+    const texts = ["Front-End Developer","Student", "Web Designer", "Creative Coder"];
     let count = 0;
     let index = 0;
     let currentText = '';
